@@ -2,24 +2,53 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #616157;
-    background-image: url(../images/restautant_floor.jpg);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
+    background-color: #a7a794;
+    
 }
 h1 {
     text-align: center;
     margin-top: 50px;
-    color: #ffffff;
+    color: #cfd15dd7;
 }
 
+.home {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 150px;
+    background-image: url(../images/restautant_floor.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.menu {
+    padding-top: 10%;
+    padding-bottom: 40%;
+    line-height: 150px;
+}
+.location {
+    padding-top: 10%;
+    padding-bottom: 40%;
+    line-height: 150px;
+}
+.reviews {
+    padding-top: 10%;
+    padding-bottom: 40%;
+    line-height: 150px;
+}
+.bookings {
+    background-image: url(../images/tables.jpg);
+    background-size: cover;
+    height: 120%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
 form {
     width: 500px;
     margin: 0 auto;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0px 0px 35px rgba(0, 0, 0, 1);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 2);
     padding: 30px;
 }
 
@@ -69,4 +98,66 @@ input:invalid {
 
 input:valid {
     border: 1px solid #ccc;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+  }
+
+  .copyright{
+    padding: 5px 5px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #dadc62d7;
+}
+.icon a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    margin: 0px 5px;
+    color: var(--text-color);
+    font-size: 3.5rem;
+    border-radius: 50%;
+    transition: all .40s;
+}
+.icon a:hover{
+    transform: translateY(-10px);
+    cursor: crosshair;
 }
