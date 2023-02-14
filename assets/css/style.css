@@ -30,8 +30,12 @@ h1 {
     width: 100%;
 }
 .menu {
+    background-image: url(../images/food_menu.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
     padding-top: 10%;
-    padding-bottom: 40%;
+    padding-bottom: 30%;
     line-height: 150px;
 }
 
