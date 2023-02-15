@@ -25,3 +25,29 @@ form.addEventListener('submit', function(event) {
   // Clear the form
   form.reset();
 });
+
+
+//carousel
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slides = document.querySelectorAll('.carousel-slide');
+let currentIndex = 0;
+
+function showSlide(index) {
+  if (index < 0 || index >= slides.length) {
+    return;
+  }
+  slides[currentIndex].classList.remove('active');
+  slides[index].classList.add('active');
+  currentIndex = index;
+}
+
+prevButton.addEventListener('click', () => {
+  showSlide(currentIndex - 1);
+});
+
+nextButton.addEventListener('click', () => {
+  showSlide(currentIndex + 1);
+});
+
+showSlide(currentIndex);
