@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: var(--second-color);
@@ -30,13 +30,97 @@ h1 {
     width: 100%;
 }
 .menu {
-    background-image: url(../images/food_menu.jpg);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    padding-top: 10%;
-    padding-bottom: 30%;
-    line-height: 140px;
+    padding-top: 1%;
+    padding-bottom: 10%;
+    line-height: 150px;
+}
+
+.menu .menu_btn {
+    display: inline;
+    align-items: center;
+    color: var(--second-color);
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.menu .menu_btn:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.starters {
+    padding-top: 2%;
+    padding-bottom: 40%;
+    line-height: 150px;
+}
+
+.starters .menu_btn {
+    display: inline;
+    align-items: center;
+    color: var(--second-color);
+    margin-left: 5px;
+    font-size: 20px;
+    padding: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+    z-index: 2;
+}
+.starters .menu_btn:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.main_course {
+    padding-top: 2%;
+    padding-bottom: 40%;
+    line-height: 150px;
+}
+
+.main_course .menu_btn {
+    display: inline;
+    align-items: center;
+    color: var(--second-color);
+    margin-left: 5px;
+    font-size: 20px;
+    padding: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.desserts {
+    padding-top: 2%;
+    padding-bottom: 40%;
+    line-height: 150px;
+}
+
+.desserts .menu_btn {
+    display: inline;
+    align-items: center;
+    color: var(--second-color);
+    margin-left: 5px;
+    font-size: 20px;
+    padding: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.main_course {
+    padding-top: 2%;
+    padding-bottom: 40%;
+    line-height: 150px;
+}
+
+.desserts {
+    padding-top: 2%;
+    padding-bottom: 40%;
+    line-height: 150px;
 }
 
 .reviews {
@@ -210,5 +294,82 @@ nav li a:hover {
   
   .card:hover {
     transform: rotateY(180deg);
+  }
+  .carousel {
+    position: relative;
+    height: 500px;
+    z-index: 1;
+  }
+  
+  .carousel-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev-button {
+    color: var(--second-color);
+    border-radius: 5px;
+    border: 4px solid var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+    width: 80px;
+    left: 0;
+  }
+
+  .prev-button:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+  }
+  
+  .next-button {
+    color: var(--second-color);
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 4px solid var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+    width: 80px;
+    right: 0;
+  }
+
+  .next-button:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
   }
   
