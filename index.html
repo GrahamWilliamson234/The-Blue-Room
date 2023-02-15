@@ -7,7 +7,7 @@
         <meta name="description" content="A portfolio project of a restaurant website">
         <meta name="keywords" content="Portfolio, Graham Williamson, restaurant, web-design, javascript, HTML, CSS">
         <meta name="author" content="Graham Williamson">
-        <title>The D.5 Restaurant</title>
+        <title>The Restaurant</title>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
@@ -32,14 +32,57 @@
         <!--home-->
         <section class="home" id="home">
         <div class="home-text">
-            <h1 style="font-size: 120px;" >Welcome <br> to <br> <span> The D.5 Restaurant</span></h1>
+            <h1 style="font-size: 200px;" >Welcome <br> to <br> <span>Restaurant</span></h1>
         </div>
         </section>
 
         <!--menu-->
         <section class="menu" id="menu">
             <div class="home-text">
-                <h1 style="font-size: 120px;" >Menu</h1>
+                    <h1 style="font-size: 120px;" >Menu
+                        <button class="menu_btn"><a href="#starters">Starters</a></button>
+                        <button class="menu_btn"><a href="#main_course">Main Course</a></button>
+                        <button class="menu_btn"><a href="#desserts">Desserts</a></button>
+                    </h1>
+                <div class="carousel">
+                    <div class="carousel-slides">
+                      <div class="carousel-slide active">
+                        <img src="assets/images/burger_chips.jpg" alt="picture of burger and chips">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="assets/images/pasta.jpg" alt="picture of pasta">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="assets/images/soup.jpg" alt="bowl of carrot soup">
+                      </div>
+                    </div>
+                    <button class="prev-button">&#10094;Back</button>
+                    <button class="next-button">Next&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="starters" id="starters">
+            <div class="home-text">
+                <h1 style="font-size: 120px;">Starters
+                    <button class="menu_btn"><a href="#menu">Main Menu</a></button>
+                </h1>
+            </div>
+        </section>
+
+        <section class="main_course" id="main_course">
+            <div class="home-text">
+                <h1 style="font-size: 120px;">Main Course
+                    <button class="menu_btn"><a href="#menu">Main Menu</a></button>
+                </h1>
+            </div>
+        </section>
+
+        <section class="desserts" id="desserts">
+            <div class="home-text">
+                <h1 style="font-size: 120px;">Desserts
+                    <button class="menu_btn"><a href="#menu">Main Menu</a></button>
+                </h1>
             </div>
         </section>
 
